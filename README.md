@@ -16,7 +16,6 @@ OVO UI clone using Flutter
 ## package used
 - flutter_svg: ^0.18.0
 - carousel_slider: ^2.2.1
-- flutter_svg: ^0.18.0
 - url_launcher: ^5.5.0
 - intl: ^0.16.1
 
