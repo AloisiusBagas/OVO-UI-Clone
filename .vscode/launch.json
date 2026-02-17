@@ -12,9 +12,10 @@
             "program": "lib/main.dart",
         },
         {
-            "name": "Flutter",
+            "name": "Flutter (Release)",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "flutterMode": "release"
         }
     ]
 }
