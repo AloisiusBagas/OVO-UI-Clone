@@ -1,7 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:ovo_ui/Constant/Color.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class Carouselmodel {
   String imgpath;
@@ -9,41 +8,13 @@ class Carouselmodel {
   Carouselmodel({required this.imgpath, this.onpress});
 }
 
-launchURL(String url) async {
-  if (await canLaunchUrl(Uri.parse(url))) {
-    await launchUrl(Uri.parse(url));
-  } else {
-    throw 'Could not launch $url';
-  }
-}
-
 final List<Carouselmodel> imgList = [
   new Carouselmodel(
-      imgpath: 'assets/images/OVO_new-user_landingpage.jpg',
-      onpress: () {
-        launchURL(
-            "https://www.grab.com/id/en/blog/transaksi-di-merchant-pilihan-ovo-cashback-30/");
-      }),
-  new Carouselmodel(
-      imgpath: 'assets/images/CLBK-OVO.jpg',
-      onpress: () {
-        launchURL("https://www.ovo.id/deals/view/27247");
-      }),
-  new Carouselmodel(
-      imgpath: 'assets/images/bayardisini.jpg',
-      onpress: () {
-        launchURL("https://www.ovo.id/");
-      }),
-  new Carouselmodel(
-      imgpath: 'assets/images/sos.jpg',
-      onpress: () {
-        launchURL("https://ovo.id/deals/view/27015");
-      }),
-  new Carouselmodel(
-      imgpath: 'assets/images/double.jpg',
-      onpress: () {
-        launchURL("https://www.ovo.id/deals/view/23786");
-      }),
+      imgpath: 'assets/images/OVO_new-user_landingpage.jpg', onpress: () {}),
+  new Carouselmodel(imgpath: 'assets/images/CLBK-OVO.jpg', onpress: () {}),
+  new Carouselmodel(imgpath: 'assets/images/bayardisini.jpg', onpress: () {}),
+  new Carouselmodel(imgpath: 'assets/images/sos.jpg', onpress: () {}),
+  new Carouselmodel(imgpath: 'assets/images/double.jpg', onpress: () {}),
 ];
 
 final List<Widget> imageSliders = imgList

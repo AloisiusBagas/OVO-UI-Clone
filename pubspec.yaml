@@ -26,7 +26,6 @@ dependencies:
   carousel_slider: ^5.0.0
   cupertino_icons: ^1.0.8
   flutter_svg: ^2.0.10+1
-  url_launcher: ^6.3.0
   intl: ^0.19.0
 
 dev_dependencies:
