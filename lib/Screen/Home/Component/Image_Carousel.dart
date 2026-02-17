@@ -5,13 +5,13 @@ import 'package:url_launcher/url_launcher.dart';
 
 class Carouselmodel {
   String imgpath;
-  Function onpress;
-  Carouselmodel({this.imgpath, this.onpress});
+  VoidCallback? onpress;
+  Carouselmodel({required this.imgpath, this.onpress});
 }
 
 launchURL(String url) async {
-  if (await canLaunch(url)) {
-    await launch(url);
+  if (await canLaunchUrl(Uri.parse(url))) {
+    await launchUrl(Uri.parse(url));
   } else {
     throw 'Could not launch $url';
   }

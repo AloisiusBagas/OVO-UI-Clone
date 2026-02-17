@@ -8,9 +8,9 @@ import 'package:ovo_ui/Screen/Home/Component/Service_Menu.dart';
 import 'package:ovo_ui/Screen/MainPage/Component/MainAppbar.dart';
 
 class HomePage extends StatefulWidget {
-  final String title;
+  final String? title;
 
-  const HomePage({Key key, this.title}) : super(key: key);
+  const HomePage({Key? key, this.title}) : super(key: key);
   @override
   _HomePageState createState() => _HomePageState();
 }

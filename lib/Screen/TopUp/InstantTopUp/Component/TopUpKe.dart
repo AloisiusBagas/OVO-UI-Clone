@@ -4,7 +4,7 @@ import 'package:ovo_ui/Constant/Color.dart';
 
 class TopUpKe extends StatelessWidget {
   const TopUpKe({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -19,7 +19,7 @@ class TopUpKe extends StatelessWidget {
         children: [
           Text(
             "Top Up Ke",
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
           SizedBox(height: 13),
           Container(

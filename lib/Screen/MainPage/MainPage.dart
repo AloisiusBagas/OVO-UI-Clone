@@ -9,7 +9,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  PageController _pagecontroller;
+  late PageController _pagecontroller;
   @override
   void initState() {
     _pagecontroller = new PageController(initialPage: 0);

@@ -4,7 +4,7 @@ import 'package:ovo_ui/Constant/Color.dart';
 
 class PilihTopUp extends StatefulWidget {
   const PilihTopUp({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -12,9 +12,9 @@ class PilihTopUp extends StatefulWidget {
 }
 
 class _PilihTopUpState extends State<PilihTopUp> {
-  TextEditingController nominalcontroller;
-  int amount;
-  FocusNode focusNode;
+  late TextEditingController nominalcontroller;
+  int amount = 0;
+  late FocusNode focusNode;
 
   @override
   void initState() {
@@ -41,7 +41,7 @@ class _PilihTopUpState extends State<PilihTopUp> {
         children: [
           Text(
             "Pilih Nominal Top Up",
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
           SizedBox(height: 16),
           Row(
@@ -56,7 +56,7 @@ class _PilihTopUpState extends State<PilihTopUp> {
             padding: const EdgeInsets.only(top: 12, bottom: 3),
             child: Text(
               "Atau masukan nominal top up di sini",
-              style: Theme.of(context).textTheme.subtitle1,
+              style: Theme.of(context).textTheme.titleMedium,
             ),
           ),
           TextField(

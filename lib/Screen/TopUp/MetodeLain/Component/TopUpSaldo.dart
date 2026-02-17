@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class TopUpSaldo extends StatelessWidget {
   const TopUpSaldo({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -36,7 +36,7 @@ class TopUpSaldo extends StatelessWidget {
               color: Colors.grey[100],
               borderRadius: BorderRadius.circular(5),
               border: Border.all(
-                color: Colors.grey[300],
+                color: Colors.grey[300]!,
                 width: 2.0,
               ),
             ),
@@ -67,7 +67,7 @@ class TopUpSaldo extends StatelessWidget {
                 "Maks. Saldo OVO Cash Rp 10.000.000",
                 style: Theme.of(context)
                     .textTheme
-                    .subtitle1
+                    .titleMedium!
                     .copyWith(color: Colors.black),
               ))
         ],

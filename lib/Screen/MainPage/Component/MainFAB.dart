@@ -4,7 +4,7 @@ import 'package:ovo_ui/Constant/Color.dart';
 
 class MainFAB extends StatelessWidget {
   const MainFAB({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

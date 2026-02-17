@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 class ServiceMenu extends StatelessWidget {
   const ServiceMenu({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -75,13 +75,13 @@ class ServiceMenu extends StatelessWidget {
 }
 
 class ServiceMenuBTN extends StatelessWidget {
-  final Function onpress;
+  final VoidCallback? onpress;
   final String svgpath;
   final String text;
   const ServiceMenuBTN({
-    Key key,
-    this.svgpath,
-    this.text,
+    Key? key,
+    required this.svgpath,
+    required this.text,
     this.onpress,
   }) : super(key: key);
 
