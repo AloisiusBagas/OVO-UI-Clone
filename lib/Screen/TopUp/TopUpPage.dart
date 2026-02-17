@@ -10,9 +10,7 @@ class TopUpPage extends StatefulWidget {
 
 class _TopUpPageState extends State<TopUpPage>
     with SingleTickerProviderStateMixin {
-  TabController _tabController;
-
-  int selectedIndex;
+  late TabController _tabController;
 
   @override
   void initState() {

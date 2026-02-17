@@ -5,8 +5,8 @@ import 'package:ovo_ui/Constant/Color.dart';
 class MainBottomNavBar extends StatefulWidget {
   final PageController pageController;
   const MainBottomNavBar({
-    Key key,
-    this.pageController,
+    Key? key,
+    required this.pageController,
   }) : super(key: key);
 
   @override
@@ -87,7 +87,9 @@ class _MainBottomNavBarState extends State<MainBottomNavBar> {
               SvgPicture.asset(
                 svgpath,
                 height: 19,
-                color: currindex == index ? darkpurple : greyicon,
+                colorFilter: ColorFilter.mode(
+                    currindex == index ? darkpurple : greyicon,
+                    BlendMode.srcIn),
               ),
               SizedBox(height: 3),
               Text(

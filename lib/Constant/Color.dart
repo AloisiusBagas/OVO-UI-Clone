@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 final Color darkpurple = Color(0xFF48268C);
 final Color greybgcolor = Color(0xFFF4F4F4);

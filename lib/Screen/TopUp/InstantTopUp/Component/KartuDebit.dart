@@ -4,7 +4,7 @@ import 'package:ovo_ui/Constant/Color.dart';
 
 class PilihKartuDebit extends StatelessWidget {
   const PilihKartuDebit({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -18,7 +18,7 @@ class PilihKartuDebit extends StatelessWidget {
         children: [
           Text(
             "Kartu Debit",
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
           SizedBox(height: 18),
           Container(

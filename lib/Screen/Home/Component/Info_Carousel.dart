@@ -4,7 +4,7 @@ import 'package:ovo_ui/Screen/Home/Component/Image_Carousel.dart';
 
 class InfoPromoCarousel extends StatelessWidget {
   const InfoPromoCarousel({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -22,7 +22,7 @@ class InfoPromoCarousel extends StatelessWidget {
               children: <Widget>[
                 Text(
                   "Info dan Promo Spesial",
-                  style: Theme.of(context).textTheme.headline6,
+                  style: Theme.of(context).textTheme.titleLarge,
                 ),
                 Text(
                   "Lihat Semua",

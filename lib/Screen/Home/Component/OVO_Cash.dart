@@ -3,7 +3,7 @@ import 'package:ovo_ui/Constant/Color.dart';
 
 class OVOCash extends StatelessWidget {
   const OVOCash({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

@@ -3,7 +3,7 @@ import 'package:ovo_ui/Constant/Color.dart';
 
 class InfoMenarik extends StatelessWidget {
   const InfoMenarik({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -16,12 +16,12 @@ class InfoMenarik extends StatelessWidget {
         children: <Widget>[
           Text(
             "Yang Menarik di OVO",
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
           SizedBox(height: 6),
           Text(
             "Jangan ngaku update kalau belum cobain fitur ini",
-            style: Theme.of(context).textTheme.subtitle1,
+            style: Theme.of(context).textTheme.titleMedium,
           ),
           SizedBox(height: 16),
           Row(
@@ -52,18 +52,18 @@ class InfoMenarik extends StatelessWidget {
 }
 
 class InfoCard extends StatelessWidget {
-  final Function onpress;
+  final VoidCallback? onpress;
   final String imgpath;
   final String title;
   final String desc;
   final String textbutton;
 
   const InfoCard({
-    Key key,
-    this.title,
-    this.desc,
-    this.imgpath,
-    this.textbutton,
+    Key? key,
+    required this.title,
+    required this.desc,
+    required this.imgpath,
+    required this.textbutton,
     this.onpress,
   }) : super(key: key);
 

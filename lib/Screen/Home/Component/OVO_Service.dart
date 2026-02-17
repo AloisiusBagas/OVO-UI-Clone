@@ -5,7 +5,7 @@ import 'package:ovo_ui/Screen/TopUp/TopUpPage.dart';
 
 class TopUpService extends StatelessWidget {
   const TopUpService({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -49,14 +49,14 @@ class TopUpService extends StatelessWidget {
 }
 
 class TopupBTN extends StatelessWidget {
-  final Function onpress;
+  final VoidCallback? onpress;
   final String iconpath;
   final String text;
 
   const TopupBTN({
-    Key key,
-    this.iconpath,
-    this.text,
+    Key? key,
+    required this.iconpath,
+    required this.text,
     this.onpress,
   }) : super(key: key);
 

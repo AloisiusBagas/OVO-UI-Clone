@@ -5,7 +5,6 @@ import 'package:ovo_ui/Screen/TopUp/MetodeLain/Component/TopUpSaldo.dart';
 class MetodeLain extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    new TextEditingController(text: "OVO Cash");
     return Scaffold(
       backgroundColor: Colors.grey[100],
       body: Column(
@@ -16,8 +15,10 @@ class MetodeLain extends StatelessWidget {
             padding: EdgeInsets.symmetric(vertical: 13),
             child: Text(
               "Top up makin mudah dengan metode berikut:",
-              style:
-                  Theme.of(context).textTheme.subtitle1.copyWith(fontSize: 14),
+              style: Theme.of(context)
+                  .textTheme
+                  .titleMedium
+                  ?.copyWith(fontSize: 14),
             ),
           ),
           Expanded(
@@ -63,9 +64,9 @@ class MetodeBTN extends StatelessWidget {
   final String text;
   final String icon;
   const MetodeBTN({
-    Key key,
-    this.text,
-    this.icon,
+    Key? key,
+    required this.text,
+    required this.icon,
   }) : super(key: key);
 
   @override
