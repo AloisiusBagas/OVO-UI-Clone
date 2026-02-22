@@ -19,6 +19,7 @@ class _MainBottomNavBarState extends State<MainBottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
+      padding: EdgeInsets.zero,
       child: Container(
         width: double.infinity,
         color: Colors.white,
@@ -36,14 +37,24 @@ class _MainBottomNavBarState extends State<MainBottomNavBar> {
               1,
             ),
             Container(
-              alignment: Alignment.bottomCenter,
-              padding: EdgeInsets.only(bottom: 8),
+              alignment: Alignment.center,
               height: 56,
               width: MediaQuery.of(context).size.width / 5,
-              child: Text(
-                "Scan",
-                style: TextStyle(
-                    fontSize: 12, fontWeight: FontWeight.w600, color: greyicon),
+              child: Container(
+                height: 48,
+                width: 48,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.white,
+                ),
+                child: Text(
+                  "Scan",
+                  style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w600,
+                      color: greyicon),
+                ),
               ),
             ),
             iconBTMAppbar(
